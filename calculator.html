@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div id="outermost">
+      <div class="topContainer">
+        <h3>Calculator</h3>
+      </div>
+      <div id="display">00</div>
+      <div class="gridContainer">
+        <button onclick="Clear()" class="gridItem">CE</button>
+        <button onclick="Remove()" class="gridItem">C</button>
+        <button onclick="AddToDisplay('3.14')" class="gridItem">π</button>
+        <button onclick="AddToDisplay('+')" class="gridItem">+</button>
+        <button onclick="AddToDisplay('1')" class="gridItem">1</button>
+        <button onclick="AddToDisplay('2')" class="gridItem">2</button>
+        <button onclick="AddToDisplay('3')" class="gridItem">3</button>
+        <button onclick="AddToDisplay('-')" class="gridItem">-</button>
+        <button onclick="AddToDisplay('4')" class="gridItem">4</button>
+        <button onclick="AddToDisplay('5')" class="gridItem">5</button>
+        <button onclick="AddToDisplay('6')" class="gridItem">6</button>
+        <button onclick="AddToDisplay('*')" class="gridItem">x</button>
+        <button onclick="AddToDisplay('7')" class="gridItem">7</button>
+        <button onclick="AddToDisplay('8')" class="gridItem">8</button>
+        <button onclick="AddToDisplay('9')" class="gridItem">9</button>
+        <button onclick="AddToDisplay('/')" class="gridItem">/</button>
+        <button onclick="AddToDisplay('0')" class="gridItem">0</button>
+        <button onclick="AddToDisplay('.')" class="gridItem">.</button>
+        <button onclick="Calculate()" class="gridItem">=</button>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
