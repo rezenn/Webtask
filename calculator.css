@@ -1,0 +1,97 @@
+#outermost {
+    border-radius: 15px;
+    border: 1px solid #333;
+    width: 400px;
+    height: auto;
+
+}
+
+
+.topContainer {
+    height: auto;
+    width: 400px;
+    background-color: white;
+
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+#display {
+    height: 11rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.9rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: aquamarine;
+    width: 400px;
+    border-radius: 0px 0px 15px 15px;
+
+
+}
+
+button:hover {
+    background-color: rgba(109, 255, 255, 0.667);
+}
+
+.gridItem {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    border: 1px solid #333;
+    height: 70px;
+    width: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.gridItem:nth-child(1),
+.gridItem:nth-child(2),
+.gridItem:nth-child(3),
+.gridItem:nth-child(4),
+.gridItem:nth-child(8),
+.gridItem:nth-child(12),
+.gridItem:nth-child(16) {
+    background-color: aqua;
+}
+
+.gridItem:nth-child(1):hover,
+.gridItem:nth-child(2):hover,
+.gridItem:nth-child(3):hover,
+.gridItem:nth-child(4):hover,
+.gridItem:nth-child(8):hover,
+.gridItem:nth-child(12):hover,
+.gridItem:nth-child(16):hover {
+    background-color: rgb(145, 248, 248);
+}
+
+.gridItem:nth-child(17) {
+    border-radius: 0px 0px 0 15px;
+
+}
+
+.gridItem:last-child {
+    grid-column: 3/5;
+    border: 1px solid #333;
+    background-color: rgb(130, 244, 244);
+    width: auto;
+    border-radius: 0px 0px 15px 0px;
+
+}
+
+.gridItem:last-child:hover {
+    grid-column: 3/5;
+    background-color: rgb(242, 252, 252);
+}
